@@ -1,0 +1,14 @@
+# config.yaml
+defaults:
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+
+test_dataset: ogbn-arxiv   # default
+objective: test_acc
+use_regression_approach: true
+use_advanced_features: true
+onehot: false
+normalize: false
+merge_runs: true
+use_group_cv: true
+remove_dup: false
